@@ -42,6 +42,16 @@ public class forLoopExample {
 
     }
 
+    public void factorial(int n) {
+        long fact = 1;
+        for (int i = 2; i <= n; i++) {
+            fact = fact * i;
+        }
+        System.out.println("factorial from " + n + " is = " + fact);
+
+
+    }
+
 
     public static void main(String[] args) {
         forLoopExample fl = new forLoopExample();
@@ -49,5 +59,6 @@ public class forLoopExample {
         fl.forExample();
         fl.forLoop();
         fl.fibonaci(10);
+        fl.factorial(5);
     }
 }
