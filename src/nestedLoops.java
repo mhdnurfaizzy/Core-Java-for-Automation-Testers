@@ -31,6 +31,38 @@ public class nestedLoops {
 
     }
 
+    public void otherPyramid3() {
+
+        int k=1;
+
+        for(int i=1;i<4;i++) {
+            for(int j=1;j<=i;j++) {
+                System.out.print(j);
+                System.out.print("\t");
+//                k++;
+            }
+            System.out.println(" ");
+        }
+
+    }
+
+    public void otherPyramid4() {
+        int rows = 5;
+        int oddNumber = 1;
+        System.out.println("Pyramid with odd number");
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print("  "); // Adjust spacing for better alignment
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(oddNumber + " ");
+                oddNumber += 2;
+            }
+            System.out.println(" ");
+        }
+
+    }
+
     public void pyramidNestedLoops() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number : ");
@@ -61,6 +93,12 @@ public class nestedLoops {
         nl.otherPyramid();
         System.out.println();
         nl.otherPyramid2();
+        System.out.println();
+        nl.otherPyramid3();
+        System.out.println();
+        nl.otherPyramid4();
+        System.out.println();
+
 
         for (int i=1;i<=3;i++) { //looping for 3 times
             System.out.println("Outer loop started");
