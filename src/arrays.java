@@ -1,6 +1,40 @@
 import java.util.Arrays;
 
 public class arrays {
+    // Exercise
+    public void printSmallestNumber() {
+        int arr[][] = {{1,2,3}, {4,5,6}, {7,8,9}};
+        int min =arr[0][0];
+
+        for(int i=0;i<3;i++) { //print rows
+            for (int j=0;j<3;j++) { //print colomn
+                if (arr[i][j] < min) {
+                    min = arr[i][j]; //get smallest value
+                }
+            }
+        }
+
+        System.out.println(
+                "Smallest element present in given array: "
+                        + min);
+    }
+    public void printMaximumNumber() {
+        int arr[][] = {{1,2,3}, {4,5,6}, {7,8,9}};
+        int max =arr[0][0];
+
+        for(int i=0;i<3;i++) { //print rows
+            for (int j=0;j<3;j++) { //print colomn
+                if (arr[i][j] > max) {
+                    max = arr[i][j]; //get max value from array
+                }
+            }
+        }
+
+        System.out.println(
+                "Smallest element present in given array: "
+                        + max);
+    }
+
     //2Dimension array
     public void easyWayMultiDimensionalArrays() {
         int arr[][] = {{1,2,3}, {1,2,3}, {1,2,3}};
@@ -81,5 +115,9 @@ public class arrays {
         ar.easyWayMultiDimensionalArrays();
         System.out.println("====");
         ar.otherMultiDimensionalArrays();
+        System.out.println("====");
+        ar.printSmallestNumber();
+        System.out.println("====");
+        ar.printMaximumNumber();
     }
 }
