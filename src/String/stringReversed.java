@@ -1,3 +1,5 @@
+package String;
+
 public class stringReversed {
 
     public static void main(String[] args) {
