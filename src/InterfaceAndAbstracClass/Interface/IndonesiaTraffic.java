@@ -1,4 +1,4 @@
-package Interface;
+package InterfaceAndAbstracClass.Interface;
 
 public class IndonesiaTraffic implements CentralTraffic, SymbolTraffic{
 
@@ -6,7 +6,7 @@ public class IndonesiaTraffic implements CentralTraffic, SymbolTraffic{
         System.out.println("Walk in pedestrian");
     }
 
-    //CentralTraffic Interface
+    //CentralTraffic InterfaceAndAbstracClass.Interface
     @Override
     public void greenGo() {
         System.out.println("GreenGo implementations");

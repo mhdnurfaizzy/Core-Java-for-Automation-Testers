@@ -1,4 +1,4 @@
-package Interface;
+package InterfaceAndAbstracClass.Interface;
 
 public interface SymbolTraffic {
 
