@@ -26,12 +26,6 @@ public class stringClassDemo {
         System.out.println(arr[1]);
         System.out.println(a.replace("t", "s"));
 
-
-
-
-
-
-
     }
 
 }
