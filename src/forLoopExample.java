@@ -1,5 +1,47 @@
 public class forLoopExample {
 
+    public void printOut(){
+            int[] numbers = {11,22,33,44,55,66,77,88,99};
+
+            for (int i = 0; i < numbers.length; i++) {
+                if (i % 2 == 0) {
+                    System.out.print("-*");
+                } else {
+                    System.out.print(numbers[i]);
+                    System.out.print("*");
+                }
+            }
+            System.out.print("-");
+    }
+
+
+
+    public void oddNumber() { //print angka ganjil
+        int number = 10;
+        System.out.print("List of odd numbers from 1 to " + number + ": ");
+        for (int i = 1; i <= number; i++) {
+            //logic to check if the number is even or not
+            //if i%2 is equal to zero, the number is even
+            if (i%2!=0){
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+
+
+    public void evenNumber() { //print angka genap
+        int number = 10;
+        System.out.print("List of even numbers from 1 to " + number + ": ");
+        for (int i = 1; i <= number; i++) {
+            //logic to check if the number is even or not
+            //if i%2 is equal to zero, the number is even
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
     public void ifElse() {
         if(5>2) {
             System.out.println("passed");
@@ -78,5 +120,10 @@ public class forLoopExample {
         fl.fibonaci(10);
         fl.factorial(5);
         fl.primeNumber();
+        fl.evenNumber();
+        fl.oddNumber();
+        fl.printOut();
+
     }
+
 }
