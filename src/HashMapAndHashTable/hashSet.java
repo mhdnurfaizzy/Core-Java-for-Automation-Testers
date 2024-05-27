@@ -1,4 +1,4 @@
-package arrayList;
+package HashMapAndHashTable;
 
 import java.util.HashSet;
 import java.util.Iterator;
